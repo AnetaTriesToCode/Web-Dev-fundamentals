@@ -1,0 +1,16 @@
+h3 {font-size: 20x;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+h2 {font-size: 25px;
+font-family:Georgia, 'Times New Roman', Times, serif;
+text-align: center;
+}
+li {font-size: 15px;
+font-family: 'Times New Roman', Times, serif;}
+p {font-size: 15px;
+font-family: 'Times New Roman', Times, serif;}
+img {width: 15%;
+    height: 20%;
+    float:right
+}

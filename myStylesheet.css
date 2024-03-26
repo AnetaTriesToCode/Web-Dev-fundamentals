@@ -1,0 +1,51 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(18, auto);
+  background-color: darksalmon;
+  gap: 10px;
+}
+
+.column {
+  background-color: peachpuff;
+  display: grid;
+  grid-auto-rows: minmax(20px, 30px);
+  max-width: 100%;
+}
+
+.grid-item {
+  background-color: lightgray;
+  text-align: center;
+  border: 1px solid black;
+  padding: 5px;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 960px) {
+  /* Breakpoint 1: Adjust styles for smaller screens */
+  .container {
+    color: crimson;
+    background-color: chocolate;
+    row-gap: 1px;
+    column-gap: 1px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  /* Breakpoint 2: Hide the grid when screen width is 800px or less */
+  .container {
+    display: none;
+  }
+
+  /* Show the image when screen width is 800px or less */
+  .periodic-table-picture {
+    display: block;
+    text-align: center;
+    margin: 20px auto; /* Adjust margin as needed */
+  }
+}
+
+.periodic-table-picture img {
+  display:none;
+  width: 100%; /* Ensure the image takes the full width of its container */
+  height: auto;
+}

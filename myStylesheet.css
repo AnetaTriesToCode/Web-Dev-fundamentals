@@ -19,7 +19,16 @@
   padding: 5px;
   font-size: 15px;
 }
-
+.PT {
+  display: none;
+}
+img {
+  @media screen and (max-width: 800px) {
+    display: block;
+    width: 80%;
+    height: auto;
+  }
+}
 @media screen and (max-width: 960px) {
   /* Breakpoint 1: Adjust styles for smaller screens */
   .container {
@@ -35,17 +44,11 @@
   .container {
     display: none;
   }
-
-  /* Show the image when screen width is 800px or less */
-  .periodic-table-picture {
+  .PT {
     display: block;
     text-align: center;
-    margin: 20px auto; /* Adjust margin as needed */
+    margin: 20px auto;
   }
 }
+/*above makes the picture appear only when the screen size drops below 800px*/
 
-.periodic-table-picture img {
-  display:none;
-  width: 100%; /* Ensure the image takes the full width of its container */
-  height: auto;
-}

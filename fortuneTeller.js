@@ -1,0 +1,13 @@
+let mothersName = prompt("What is/was your mother's first name?");
+let street = prompt("What was the name of the street you grew up on?");
+let colour = prompt("What was the colour you liked the most as a child?");
+let age = prompt("How old are you?");
+let num = prompt("Pick a number between 1-10");
+let age2 = Number(age);
+let num2 = Number(num);
+let sum = age2 + num2;
+let remainder = age2 % num2;
+let divide = Math.round(age2 / num2);
+console.log(`You will meet your best friend in ${num} years and her name will be ${mothersName} ${street}`);
+console.log(`You will get married in ${sum} years and have ${remainder} child/ren ` );
+console.log(`In ${divide} years you will dye your hair ${colour}`);

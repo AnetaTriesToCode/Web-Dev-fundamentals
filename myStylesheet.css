@@ -2,22 +2,35 @@
   display: grid;
   grid-template-columns: repeat(18, auto);
   background-color: darksalmon;
-  gap: 10px;
+  gap: 5px;
 }
 
 .column {
   background-color: peachpuff;
   display: grid;
-  grid-auto-rows: minmax(20px, 30px);
-  max-width: 100%;
+  grid-auto-rows: minmax(35px, 40px);
+  grid-auto-columns: minmax(70px, 90px);
+  max-width: 1px;
 }
 
 .grid-item {
-  background-color: lightgray;
+  background-color: lightgoldenrodyellow;
   text-align: center;
   border: 1px solid black;
-  padding: 5px;
-  font-size: 15px;
+  font-size: 12px;
+}
+.grid-item1 {
+  display:hidden;
+}
+.grid-item::after {
+  content: attr(data-element);
+  display: block;
+  font-size: 10px;
+}
+.grid-item::before {
+  content: attr(data-atomic-number);
+  display:block;
+  font-size:10px;
 }
 .PT {
   display: none;
@@ -32,8 +45,8 @@ img {
 @media screen and (max-width: 960px) {
   /* Breakpoint 1: Adjust styles for smaller screens */
   .container {
-    color: crimson;
-    background-color: chocolate;
+    color: navy;
+    background-color: lightskyblue;
     row-gap: 1px;
     column-gap: 1px;
   }
@@ -47,8 +60,7 @@ img {
   .PT {
     display: block;
     text-align: center;
-    margin: 20px auto;
+    margin: 5px auto;
   }
 }
 /*above makes the picture appear only when the screen size drops below 800px*/
-
